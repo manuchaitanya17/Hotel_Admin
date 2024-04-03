@@ -1,2 +1,3 @@
 # Hotel_Admin
-An Admin-facing solution for the managements of rooms in hotel.
+An Admin-facing solution for the managements of rooms in hotel implemented using React.js, Node.js, Express.js.
+
