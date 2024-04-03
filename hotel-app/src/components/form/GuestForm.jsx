@@ -84,7 +84,7 @@ const GuestForm = ({
 
     try {
       const response = await axios.post(
-        "http://localhost:5001/api/sendemail",
+        "https://hotel-admin-92du.onrender.com/api/sendemail",
         data
       );
       console.log(response.data);
