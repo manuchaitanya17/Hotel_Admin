@@ -69,39 +69,28 @@ const GuestForm = ({
   };
 
   const sendEmail = async (bookingData) => {
-    // console.log(bookingData.email);
-    const name = bookingData.guestName
-    const mail = bookingData.email;
-    const room = bookingData.roomNo;
-    const type = bookingData.type;
-    const rent = bookingData.price;
-    const datein = bookingData.checkIn;
-    const dateout = bookingData.checkOut;
-    console.log(mail);
-    console.log(room);
-    console.log(type);
-    console.log(rent);
-    console.log(datein);
-    console.log(dateout);
+    const { guestName, email, roomNo, type, price, checkIn, checkOut } =
+      bookingData;
+
     const data = {
-      mail,
-      room,
+      mail: email,
+      room: roomNo,
       type,
-      rent,
-      datein,
-      dateout,
-      name,
+      rent: price,
+      datein: checkIn,
+      dateout: checkOut,
+      name: guestName,
     };
-    // try {
+
+    try {
       const response = await axios.post(
-        "https://localhost:5001/api/sendemail",
+        "http://localhost:5001/api/sendemail",
         data
       );
       console.log(response.data);
-    //   console.log(response.data);
-    // } catch (error) {
-    //   console.error("Error sending email:", error);
-    // }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   };
 
   const handleSubmit = async (event) => {
@@ -155,10 +144,11 @@ const GuestForm = ({
 
         setBookings([...bookings, newBooking]);
 
-        await sendEmail(newBooking);
-
-        setNotifySuccess(true);
-        hideModal();
+        // Send email asynchronously
+        sendEmail(newBooking).then(() => {
+          setNotifySuccess(true);
+          hideModal();
+        });
       } else {
         newErrors.push("Room already occupied.");
         setErrors(newErrors);
