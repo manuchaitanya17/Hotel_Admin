@@ -1,0 +1,52 @@
+.card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 26vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  /* grid-row-gap: 2rem; */
+  grid-column-gap: 40px;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.card img:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.card img:hover img {
+  opacity: 0.3;
+}
+.card img:hover .price-top {
+  opacity: 0;
+}
+.card img:hover .room-link {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.card .price {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  color: #000000;
+}
+
+.card-btn {
+  background-color: #000000;
+  border-color: #000000;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.card-btn:hover {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.card-btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
