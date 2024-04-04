@@ -5,7 +5,7 @@ This project is a complete admin-facing solution for managing rooms in a hotel. 
 # Hosted Link:
 https://hotel-admin-2.onrender.com/
 
-### Process for Room Booking:
+## Process for Room Booking:
 Here are the steps to interact with the Hotel Room Management System:
 
 1. Scroll down the Home page (https://hotel-admin-2.onrender.com/) until you locate the Featured Rooms section.
@@ -19,6 +19,17 @@ Here are the steps to interact with the Hotel Room Management System:
 9. Confirm cancellation if desired.
 
 These steps provide a seamless experience for booking, managing, and canceling hotel room reservations through the provided system.
+
+## Technologies Used
+### Frontend:
+- HTML/CSS
+- JavaScript (React.js)
+- React Router for routing
+- Axios for HTTP requests
+
+### Backend (implemented separately):
+- Express.js for server-side logic
+- Nodemailer for sending email notifications
 ## Features
 
 1. **Room Management**
@@ -71,3 +82,9 @@ cd hotel-app
 npm install
 npm start
 ```
+### Contributors
+Manu Chaitanya - Developer
+
+### Notes
+- This application assumes that only admins will be accessing it, hence no login/signup pages are implemented.
+- The frontend is designed to be responsive, ensuring optimal user experience across various devices.
