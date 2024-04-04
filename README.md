@@ -2,6 +2,23 @@
 
 This project is a complete admin-facing solution for managing rooms in a hotel. It allows hotel administrators to efficiently handle room bookings, modifications, and cancellations. Below is an overview of the features and functionalities implemented in this application.
 
+# Hosted Link:
+https://hotel-admin-2.onrender.com/
+
+### Process for Room Booking:
+Here are the steps to interact with the Hotel Room Management System:
+
+1. Scroll down the Home page (https://hotel-admin-2.onrender.com/) until you locate the Featured Rooms section.
+2. Click on "Book Room" and fill in your accurate details, ensuring your email is correct and the booking doesn't overlap with any existing bookings.
+3. Upon successful booking confirmation, navigate to the Bookings page (https://hotel-admin-2.onrender.com/Bookings) and click the "Reset" button to clear all filters.
+4. Your booking will now be visible on the Bookings page.
+5. Check your email inbox for a confirmation email from 'manuchaitanya21@gmail.com' regarding your booking.
+6. Utilize the filtering options on the Bookings page to filter by check-in date, check-out date, and room type.
+7. Edit your booking details if needed.
+8. Before canceling a booking, an alert will display confirming your refund status.
+9. Confirm cancellation if desired.
+
+These steps provide a seamless experience for booking, managing, and canceling hotel room reservations through the provided system.
 ## Features
 
 1. **Room Management**
@@ -44,14 +61,13 @@ git clone https://github.com/manuchaitanya17/Hotel_Admin.git
 cd backend
 npm install
 nodemon server.js
+```
 
-3. Now to run the front-end go to its folder and start the react app.\
+3. Now to run the front-end go to its folder and start the react app.
 
 ```bash
 cd ..
 cd hotel-app
 npm install
 npm start
-
-
-
+```
