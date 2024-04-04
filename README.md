@@ -3,8 +3,8 @@
 This project is a complete admin-facing solution for managing rooms in a hotel. It allows hotel administrators to efficiently handle room bookings, modifications, and cancellations. Below is an overview of the features and functionalities implemented in this application.
 
 # Hosted Link:
-https://hotel-admin-2.onrender.com/
-
+Front-End: https://hotel-admin-2.onrender.com/
+Back-End API: https://hotel-admin-92du.onrender.com
 ## Process for Room Booking:
 Here are the steps to interact with the Hotel Room Management System:
 
